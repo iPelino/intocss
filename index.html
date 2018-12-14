@@ -8,7 +8,7 @@
 
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
@@ -24,8 +24,8 @@
         </nav>
     </header>
     
-    <section class="container">
-        <div id="left-section">
+    <section class="container clearfix">
+        <div class="sub-section left-section">
             <img src="https://via.placeholder.com/150" alt="service 1">
             <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
@@ -33,7 +33,7 @@
                     magna aliquyam erat, sed diam voluptua.
             </p>
         </div>
-        <div id="main-section">
+        <div class="sub-section main-section">
             <img src="https://via.placeholder.com/150" alt="service 2">
             <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
@@ -41,7 +41,7 @@
                     magna aliquyam erat, sed diam voluptua.
             </p>
         </div>
-        <div id="right-section">
+        <div class="sub-section">
             <img src="https://via.placeholder.com/150" alt="service 3">
             <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
@@ -50,7 +50,18 @@
             </p>
         </div>
     </section>
-    
+    <div class="container contact-form">
+        <form>
+            <caption>Contact us</caption>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="your full name goes here">
+            <label for="email">Email Address</label>
+            <input type="email" id="email">
+            <label for="message">Message</label>
+            <Textarea id="message" cols="30" rows="5"></Textarea>
+            <input type="submit" value="Send">
+        </form  >
+    </div>
     <footer>
         <p>&copy; Information Technology - 2018</p>
     </footer>
